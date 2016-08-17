@@ -1,0 +1,18 @@
+{
+  "name": "Direcao Provincial de Recursos Minerais e Energia",
+  "authors": [
+    "Ivo Zinenda <izinenda@outlook.com>"
+  ],
+  "description": "Delegação de Tete",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
