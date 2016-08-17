@@ -19,3 +19,17 @@ markdown: kramdown
 gems:
   - jekyll-seo-tag
   - jekyll-sitemap
+
+sass:
+  sass_dir: assets/_sass
+  style: compressed
+
+author: Ivo zinenda
+twitter:
+  username: Imaz_3g
+
+logo: 
+
+port: 4001
+
+origin: https://github.com/Zinenda/dprme.git
