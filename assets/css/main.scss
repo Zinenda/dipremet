@@ -13,7 +13,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 100%;
     overflow-x: hidden;
-    color: #fff;
+    color: #333;
 }
 
 main {
@@ -42,6 +42,16 @@ footer {
     }
 }
 
+.thumbnail {
+    &:hover {
+        background: $primary-color-light;
+        color: #fff;
+    }
+}
+iframe {
+    width: 100%;
+    height: auto;
+}
 
 @import
     "../../bower_components/materialize/sass/materialize"

@@ -1,29 +1,31 @@
 <nav class="nav-wrapper">
-    <a href="{{ site.github.url | prepend: site.url }}/" class="brand-logo center">DPRME</a>
-    <a href="#" class="button-collapse" data-activates="sidenav"><i class="fa fa-navicon"></i></a>
+    <div class="container">
+        <a href="{{ site.github.url | prepend: site.url }}/" class="brand-logo center">DPRME</a>
+        <a href="#" class="button-collapse" data-activates="sidenav"><i class="fa fa-navicon"></i></a>
 
-    <ul class="left hide-on-med-and-down">
-        <li>
-            <a href="#" title="Serviços">Serviços</a>
-        </li>
-        <li>
-            <a href="#" title="Delegação">Delegação</a>
-        </li>
-    </ul>
+        <ul class="left hide-on-med-and-down">
+            <li>
+                <a href="#" title="Serviços">Serviços</a>
+            </li>
+            <li>
+                <a href="#" title="Delegação">Delegação</a>
+            </li>
+        </ul>
 
-    <ul class="right hide-on-med-and-down">
-        <li>
-            <a href="#acerca" title="Quem Somos"><i class="fa fa-chevron-down"></i> Quem Somos</a>
-            <ul id="acerca" class="dropdown-content">
-                <li>
-                    <a href="#" title="Sobre">Sobre</a>
-                </li>
-                <li>
-                    <a href="#" title="Carta de Serviço">Carta de Serviço</a>
-                </li>
-            </ul>
-        </li>
-    </ul>
+        <ul class="right hide-on-med-and-down">
+            <li>
+                <a href="#" title="Quem Somos" data-activates="acerca" class="dropdown-button"><i class="fa fa-chevron-down"></i> Quem Somos</a>
+                <ul id="acerca" class="dropdown-content">
+                    <li>
+                        <a href="#" title="Sobre">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#" title="Carta de Serviço">Carta de Serviço</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
 
-    {% include sidenav.html %}
+        {% include sidenav.html %}
+    </div>
 </nav>
