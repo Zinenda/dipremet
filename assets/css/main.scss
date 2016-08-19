@@ -10,14 +10,21 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: 'Roboto', sans-serif;
-    font-size: 100%;
+    font: {
+        family: 'Roboto', sans-serif;
+        size: 100%;
+    }
     overflow-x: hidden;
     color: #333;
 }
 
 main {
     flex: 1 0 auto;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
 }
 
 .inline-list {
@@ -34,11 +41,9 @@ img {
 }
 footer {
     margin: 0;
-    a {
-        color: #fff;
-    }
+    color: #fff;
     i {
-        color: #fff;
+        color: currentColor;
     }
 }
 
@@ -50,7 +55,7 @@ footer {
 }
 iframe {
     width: 100%;
-    height: auto;
+    height: 400px;
 }
 
 @import

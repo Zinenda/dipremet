@@ -2,21 +2,31 @@
     <div class="container">
         <div class="row">
             <div class="col s12 l4">
-                Localização
+                <p>Localize-nos</p><hr>
+                <p class="light">
+                    Av. da Liberdade <br>
+                    Bairro Filipe Samuel Magaia <br>
+                    Ex Edifício da GPZ, 6º Piso <br>
+                    Tete - Moçambique
+                </p>
             </div>
             <div class="col s12 l4">
-                redes socia
+                <p>Conecte-te a nós</p><hr>
+                {% include social-contacts.html %}
             </div>
             <div class="col s12 l4">
-                Quem Somos
+                <p>Quem Somos</p><hr>
+                <p class="light">{{ site.description }}</p>
             </div>
         </div>
     </div>
 
-    <div class="footer copyright">
+    <div class="footer-copyright">
         <div class="container">
-            <div class="left-align">{{ site.title}} - {{ site.description }}</div>
-            <div class="right-align">&copy;2K16 Powered by <a href="https://izitag.github.io" target="_blank" title="IZItag">IZItag</a></div>
+            <div class="row">
+                <span class="col s8">{{ site.title}} - {{ site.description }}</span>
+                <span class="col s4">&copy;2K16 Powered by <a href="https://izitag.github.io" target="_blank" title="IZItag">IZItag</a></span>
+            </div>
         </div>
     </div>
 </footer>

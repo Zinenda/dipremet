@@ -9,10 +9,10 @@
 title: DPRMET
 email: your-email@domain.com
 description: Direcção Provincial de Recursos Minerais e Energia de Tete
-url: "https://zinenda.github.io/dprme/"
+url: ""
 github:
   username: zinenda
-  url: ""
+  url: "https://zinenda.github.io/dprme/"
 
 # Build settings
 markdown: kramdown
