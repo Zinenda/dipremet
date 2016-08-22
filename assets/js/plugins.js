@@ -27,6 +27,7 @@ $( document ).ready(function(){
     $('.scrollspy').scrollSpy();
     $('.materialboxed').materialbox();
     $('.slider').slider();
+    $('.carousel.carousel-slider').carousel({full_width: true});
     $('.modal-trigger').leanModal();
     $('.collapsible').collapsible();    
 });
