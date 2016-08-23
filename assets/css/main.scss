@@ -58,6 +58,14 @@ iframe {
     height: 400px;
 }
 
+#servicos {
+    ul {
+        li {
+            font-size: 1rem;
+        }
+    }
+}
+
 @import
     "../../bower_components/materialize/sass/materialize"
 ;
