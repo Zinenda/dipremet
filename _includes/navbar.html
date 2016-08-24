@@ -17,10 +17,13 @@
                 <a href="#" title="Quem Somos" data-activates="acerca" class="dropdown-button"><i class="fa fa-chevron-down"></i> Quem Somos</a>
                 <ul id="acerca" class="dropdown-content">
                     <li>
-                        <a href="#" title="Sobre">Sobre</a>
+                        <a href="#sobre" title="Sobre" class="modal-trigger">Sobre</a>
                     </li>
                     <li>
-                        <a href="#" title="Carta de Serviço">Carta de Serviço</a>
+                        <a href="{{ site.github.url | prepend: site.url }}/carta" title="Carta de Serviço">Carta de Serviço</a>
+                    </li>
+                    <li>
+                        <a href="{{ site.github.url | prepend: site.url }}/cadastro" title="Concorrência a vagas">Cadastro</a>
                     </li>
                 </ul>
             </li>

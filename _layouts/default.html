@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt" manifest="" class="no-js">
     {% include head.html %}
-    <body>
+    <body onload="swal('Vagas Disponíveis', 'Visite a área de cadastro na barra de navegação - cadastro, para concorrer', 'info')">
         <h1 class="center-align">Web Site em desenvolvimento por <a href="http://izitag.github.io" title="IZItag" target="_blank">IZItag</a></h1>
         {% include navbar.html %}
+        {% include sobre.html %}
 
         <main class="container">
             {{ content }}
