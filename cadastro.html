@@ -1,0 +1,67 @@
+---
+layout: default
+title: Cadastro e Concorrência a Vagas
+---      
+
+{% include page-header.html %}
+<br><br><br><br>
+<div class="row">
+    <form method="POST" action="{{ site.github.url | prepend: site.url }}/" class="col s12">
+        {% include input_required %}
+        <div class="input-field">
+            <i class="fa fa-user prefix"></i>
+            <input type="text" name="nome" required id="icon_prefix" class="validate">
+            <label for="icon_prefix">Nome Completo</label>
+        </div>
+<br><br>
+        <div class="input-field">
+            <i class="fa fa-map-marker prefix"></i>
+            <input id="moradia" type="text" name="morada" required class="validate">
+            <label for="moradia">Morada</label>
+        </div>
+<br><br>
+        <div class="input-field">
+            <i class="fa fa-tty prefix"></i>
+            <input id="celphone" type="tel" name="telefone" required class="validate">
+            <label for="celphone">Telefone</label>
+        </div>
+<br><br>
+        <div class="input-field">
+            <i class="fa fa-envelope prefix"></i>
+            <input id="mail" type="email" name="email" data-error="Incorreto" data-success="Correto" required class="validate">
+            <label for="mail">Email</label>
+        </div>
+<br><br>
+        <div class="input-field">
+            <i class="fa fa-calendar prefix"></i>
+            <input type="text" name="data" id="birthdate" class="datepicker">
+            <label for="birthdate">Data de Nascimento</label>
+        </div>
+<br><br>
+        <select>
+            <option value="Chefe de Recursos Humanos">Chefe de Recursos Humanos</option>
+            <option value="Secretário(a)">Secretário(a)</option>
+        </select>
+<br><br>
+        <div class="file-field input-field">
+            <div class="btn">
+                <span><i class="fa fa-file"></i></span>
+                <input type="file" name="ficheiro" multiple required>
+            </div>
+            <div class="file-path-wrapper">
+                <input class="file-path validate" type="text" name="ficheiro" placeholder="Carregue seus documentos">
+            </div>
+        </div>
+<br><br>
+        <div class="input-field">
+            <i class="fa fa-pencil prefix"></i>
+            <textarea id="textarea1" class="materialize-textarea" lenght="600"></textarea>
+            <label for="textarea1"></label>
+        </div>
+<br><br>
+        <div class="center">
+            <input type="submit" name="submit" class="btn" value="Envie" onclick="swal('Enviado', 'Seu email foi enviado com sucesso', 'success')">
+            <input type="reset" name="reset" class="btn-flat" value="Limpe Todos Campos" onclick="swal('Limpo', 'Todos Campos preenchidos foram limpos', 'error')">
+        </div>
+    </form>
+</div>

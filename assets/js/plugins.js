@@ -29,5 +29,11 @@ $( document ).ready(function(){
     $('.slider').slider();
     $('.carousel.carousel-slider').carousel({full_width: true});
     $('.modal-trigger').leanModal();
-    $('.collapsible').collapsible();    
+    $('.collapsible').collapsible();
+    $('select').material_select();  
+    $('input#input_text, textarea#textarea1').characterCounter();
+    $('.datepicker').pickadate({
+        selectMonths: true, // Creates a dropdown to control month
+        selectYears: 100 // Creates a dropdown of 15 years to control year
+  });
 });
