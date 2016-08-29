@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt" manifest="{{ site.github.url }}/manifest.appcache" class="no-js">
     {% include head.html %}
-    <body onload="swal('Vagas Disponíveis', 'Visite a área de cadastro na barra de navegação - cadastro, para concorrer', 'info')">
+    <body onload="myFunction()">
         <h1 class="center-align">Web Site em desenvolvimento por <a href="http://izitag.github.io" title="IZItag" target="_blank">IZItag</a></h1>
         {% include navbar.html %}
         {% include sobre.html %}
 
-        <main class="container">
+        <div id="loader">
+            <i class="fa fa-spin fa-5x fa-refresh"></i><br>
+            <span class="fa-span">Carregando...</span>
+        </div>
+
+        <main id="content" class="container animate-bottom">
             {{ content }}
         </main>
 
