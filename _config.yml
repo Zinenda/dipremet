@@ -12,7 +12,7 @@ description: Direcção Provincial de Recursos Minerais e Energia de Tete
 url: ""
 github:
   username: zinenda
-  url: "https://zinenda.github.io/dprme"
+  url: "https://zinenda.github.io/dprme/"
 
 # Build settings
 markdown: kramdown
