@@ -2,13 +2,12 @@
 <html lang="pt" manifest="{{ site.github.url }}/manifest.appcache" class="no-js">
     {% include head.html %}
     <body onload="myFunction()">
-        <h1 class="center-align">Web Site em desenvolvimento por <a href="http://izitag.github.io" title="IZItag" target="_blank">IZItag</a></h1>
         {% include navbar.html %}
         {% include sobre.html %}
 
         <div id="loader">
             <i class="fa fa-spin fa-5x fa-refresh"></i><br>
-            <span class="fa-span">Carregando...</span>
+            <span class="sr-only">Carregando...</span>
         </div>
 
         <main id="content" class="container animate-bottom">
